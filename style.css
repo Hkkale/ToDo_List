@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Headland+One&family=Inconsolata:wght@200..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;        
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+    color: white;
+    font-family: "Inconsolata", monospace;
+    row-gap: 5%;
+    
+    
+
+}
+.heading{
+
+    margin-top: 5%;
+    font-size: 80px;
+    
+
+}
+.input_cont{
+    display: flex;
+    
+    width: 50%;
+    height: 9.5%;
+    flex-direction: row;
+    padding: 1%;
+    column-gap: 0.5%;
+    
+
+}
+.inputtext{
+    position: relative;
+    z-index: 10;
+    height: 97%;
+    width: 84%;
+    border-radius:10px 0px 0px 10px;
+    padding: 1%;
+    font-size: 90%;
+    background-color:rgba(5, 2, 2, 0.274);
+    border: 0.5px solid gray;
+    color:white;
+
+    
+
+}
+.btn_Add{
+    position: relative;
+    left: -0.5%;
+
+    height: 97%;
+    width: 14%;
+    color: black;
+    background-color:white;
+    border-radius:0px 5px 5px 0px;
+    border: none;
+    padding: 1%;
+    font-size: 100%;
+}
+
+.ItemsList{
+    height: 58%;
+    width: 50%;
+    border: 1px solid white;
+    padding: 1%;
+}
+ul{
+    height: 100%;
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+}
