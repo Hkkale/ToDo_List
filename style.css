@@ -16,7 +16,7 @@
     background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
     color: white;
     font-family: "Inconsolata", monospace;
-    row-gap: 5%;
+    row-gap: 3%;
     
     
 
@@ -44,7 +44,7 @@
     z-index: 10;
     height: 97%;
     width: 84%;
-    border-radius:10px 0px 0px 10px;
+    border-radius:15px 0px 0px 15px;
     padding: 1%;
     font-size: 90%;
     background-color:rgba(5, 2, 2, 0.274);
@@ -62,46 +62,82 @@
     width: 14%;
     color: black;
     background-color:white;
-    border-radius:0px 5px 5px 0px;
+    border-radius:0px 15px 15px 0px;
     border: none;
     padding: 1%;
     font-size: 100%;
+    cursor:pointer;
+    
 }
 
 .ItemsList{
     height: 58%;
     width: 50%;
-    border: 1px solid white;
+    
     padding: 1%;
 }
 ul{
     height: 100%;
     width: 100%;
-    border: 1px solid red;
+    
     display: flex;
     list-style: none;
     flex-direction: column;
     align-items: center;
-    gap: 2%;
+    gap: 4%;
+    padding: 3%;
+   
+
 }
 .li_class{
     height: 10%;
-    width: 100%;
-    border: 1px solid;
+    width: 90%;
+    
+    border: 1px solid gray;
+    border-radius:15px;
     display: flex;
     flex-direction: row;
     align-items: center;  
+    justify-content: center;
+    gap: 2.5%;
+    padding: 0.5%;
+   
+    
 }
 .check_class{
+    height: 100%;
 
 }
 .label_class{
     height: 100%;
-    width: 50%;
-    border: 1px solid ;
+    width: 80%;
+    
+
+    
+    
+}
+.p_class{
+    font-size: 130%;
+}
+.btnEl_class{
+    
+    height: 90%;
+    width: 5%;
+    border: none;
+    outline: none;
+    background-color: rgb(63, 61, 61);
+    border-radius: 50%;
 
 }
 
 .i_class{
+    font-size: 130%;
    
+}
+.btnEl_class:hover{
+    transition-duration: 0.3s;
+    
+    background-color: red;
+    
+
 }
