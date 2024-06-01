@@ -1,144 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Headland+One&family=Inconsolata:wght@200..900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Headland+One&family=Inconsolata:wght@200..900&display=swap');
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.main{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    flex-direction: column;        
-    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
-    color: white;
-    font-family: "Inconsolata", monospace;
-    row-gap: 3%;
-    
-    
-
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(
+    109.6deg,
+    rgba(0, 0, 0, 0.93) 11.2%,
+    rgb(63, 61, 61) 78.9%
+  );
+  color: white;
+  font-family: "Inconsolata", monospace;
+  row-gap: 3%;
 }
-.heading{
-
-    margin-top: 5%;
-    font-size: 80px;
-    
-
+.heading {
+  margin-top: 5%;
+  font-size: 80px;
 }
-.input_cont{
-    display: flex;
-    
-    width: 50%;
-    height: 9.5%;
-    flex-direction: row;
-    padding: 1%;
-    column-gap: 0.5%;
-    
+.input_cont {
+  display: flex;
 
+  width: 50%;
+  height: 9.5%;
+  flex-direction: row;
+  padding: 1%;
+  column-gap: 0.5%;
 }
-.inputtext{
-    position: relative;
-    z-index: 10;
+.inputtext {
+  position: relative;
+  z-index: 10;
+  height: 97%;
+  width: 84%;
+  border-radius: 15px 0px 0px 15px;
+  padding: 1%;
+  padding-left: 2%;
+  font-size: 90%;
+  background-color: rgba(5, 2, 2, 0.274);
+  border: 0.5px solid gray;
+  color: white;
+}
+.btn_Add {
+  position: relative;
+  left: -0.5%;
+
+  height: 97%;
+  width: 16%;
+  color: black;
+  background-color: white;
+  border-radius: 0px 15px 15px 0px;
+  border: none;
+  padding: 1%;
+  font-size: 100%;
+  cursor: pointer;
+}
+
+.ItemsList {
+  height: 58%;
+  width: 50%;
+
+  padding: 1%;
+}
+ul {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 4%;
+  padding: 3%;
+}
+.li_class {
+  height: 10%;
+  width: 90%;
+
+  border: 1px solid gray;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5%;
+  padding: 3%;
+}
+.check_class {
+  height: 100%;
+}
+.label_class {
+  width: 80%;
+}
+.p_class {
+  font-size: 130%;
+}
+.btnEl_class {
+  height: 90%;
+  width: 5%;
+  border: none;
+  outline: none;
+  background-color: rgb(63, 61, 61);
+  border-radius: 50%;
+}
+.i_class {
+  font-size: 130%;
+}
+.btnEl_class:hover {
+  transition-duration: 0.3s;
+
+  background-color: red;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    margin-top: 15%;
+    font-size: 45px;
+  }
+  .input_cont {
+    width: 80%;
+    height: 5%;
+  }
+  .inputtext {
     height: 97%;
     width: 84%;
-    border-radius:15px 0px 0px 15px;
-    padding: 1%;
-    font-size: 90%;
-    background-color:rgba(5, 2, 2, 0.274);
-    border: 0.5px solid gray;
-    color:white;
-
-    
-
-}
-.btn_Add{
-    position: relative;
-    left: -0.5%;
-
-    height: 97%;
-    width: 14%;
-    color: black;
-    background-color:white;
-    border-radius:0px 15px 15px 0px;
-    border: none;
-    padding: 1%;
-    font-size: 100%;
-    cursor:pointer;
-
-    
-}
-
-.ItemsList{
-    height: 58%;
-    width: 50%;
-    
-    padding: 1%;
-}
-ul{
-    height: 100%;
-    width: 100%;
-    
-    display: flex;
-    list-style: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 4%;
-    padding: 3%;
-   
-
-}
-.li_class{
-    height: 10%;
-    width: 90%;
-    
-    border: 1px solid gray;
-    border-radius:15px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;  
-    justify-content: center;
-    gap: 2.5%;
-    padding: 0.5%;
-   
-    
-}
-.check_class{
-    height: 100%;
-
-}
-.label_class{
-    height: 100%;
+  }
+  .ItemsList {
+    height: 48%;
     width: 80%;
-    
+  }
+  ul {
+    gap: 5%;
+    padding: 3%;
+  }
+  .li_class {
+    padding: 3%;
+  }
 
-    
-    
-}
-.p_class{
-    font-size: 130%;
-}
-.btnEl_class{
-    
-    height: 90%;
-    width: 5%;
-    border: none;
-    outline: none;
-    background-color: rgb(63, 61, 61);
-    border-radius: 50%;
+  .btnEl_class:hover {
+    transition-duration: 0.1s;
 
-}
-
-.i_class{
-    font-size: 130%;
-   
-}
-.btnEl_class:hover{
-    transition-duration: 0.3s;
-    
     background-color: red;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1400px) {
+  /* Your CSS code here */
+  .heading {
+    margin-top: 10%;
+    font-size: 55px;
+  }
+  .input_cont {
+    width: 75%;
+    height: 6.5%;
+  }
+  .inputtext {
+    height: 97%;
+    width: 80%;
+  }
+  .ItemsList {
+    height: 50%;
+    width: 60%;
+  }
+  ul {
+    gap: 5%;
+  }
+}
+
+
+
+
     
 
-}
+
+  
